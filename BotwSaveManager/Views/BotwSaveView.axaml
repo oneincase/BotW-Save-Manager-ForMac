@@ -44,13 +44,13 @@
                     VerticalAlignment="Bottom"
                     HorizontalContentAlignment="Center"
                     Command="{Binding Convert}"
-                    Content="Convert"
+                    Content="转换"
                     IsDefault="True" />
             <Button HorizontalAlignment="Stretch"
                     VerticalAlignment="Bottom"
                     HorizontalContentAlignment="Center"
                     Command="{Binding Cancel}"
-                    Content="Cancel"
+                    Content="取消"
                     IsCancel="True" />
         </StackPanel>
 
@@ -59,7 +59,7 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    FontSize="10"
-                   Text="(Hover To View Save Path)"
+                   Text="(悬停查看存档路径)"
                    ToolTip.Tip="{Binding BotwSave.SourceFolder}" />
 
     </Grid>

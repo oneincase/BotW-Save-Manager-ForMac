@@ -41,11 +41,11 @@ namespace BotwSaveManager.ViewModels
         public async void Convert()
         {
             try {
-                string? output = await BrowserDialog.Folder.ShowDialog("Open Botw Save Folder");
+                string? output = await BrowserDialog.Folder.ShowDialog("选择 Botw 存档文件夹");
                 if (output != null) {
                     LogsView.Load();
                     await Task.Run(() => BotwSave.ConvertPlatform(output));
-                    await MessageBox.Show($"Save succefully converted!", "Notice", icon: MaterialIconKind.InfoCircleOutline);
+                    await MessageBox.Show($"存档转换成功！", "提示", icon: MaterialIconKind.InfoCircleOutline);
                     LogsView.Unload();
                 }
 
@@ -53,7 +53,7 @@ namespace BotwSaveManager.ViewModels
             }
             catch (Exception ex) {
                 Logger.Write(ex);
-                await MessageBox.Show(ex.Message, "Error", icon: MaterialIconKind.FileDocumentErrorOutline);
+                await MessageBox.Show(ex.Message, "错误", icon: MaterialIconKind.FileDocumentErrorOutline);
             }
         }
 

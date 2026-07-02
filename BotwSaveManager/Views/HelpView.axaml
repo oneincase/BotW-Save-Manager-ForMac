@@ -5,7 +5,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:mdix="using:Material.Icons.Avalonia"
-        Title="Help"
+        Title="帮助"
         Width="600"
         Height="370"
         d:DesignHeight="400"
@@ -30,7 +30,7 @@
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
                        IsHitTestVisible="False"
-                       Text="Help" />
+                       Text="帮助" />
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
@@ -55,7 +55,7 @@
         <TextBlock Grid.Row="1"
                    Margin="0,15,0,0"
                    HorizontalAlignment="Center"
-                   Text="This is what the folder you are selecting should look like.&#x0a;Dot not select one of these folders; select the folder that contains these items."
+                   Text="您选择的文件夹应该看起来像这样。&#x0a;请不要选择这些文件夹中的某一个，而是选择包含这些项目的文件夹。"
                    TextAlignment="Center" />
 
         <Border Grid.Row="2"
